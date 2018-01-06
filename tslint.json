@@ -8,6 +8,7 @@
     },
     "new-parens": true,
     "quotemark": false,
+    "trailing-comma": false,
     "no-var-requires": false,
     "no-arg": true,
     "no-bitwise": true,

@@ -1,5 +1,10 @@
 const steem = require('steem/lib/browser');
 
 console.log('Getting post content...');
-const resultP = steem.api.getContentAsync('yamadapc', 'test-1-2-3-4-5-6-7-9');
-resultP.then((result: any) => console.log(result));
+steem.api.getDiscussionsByTrending({
+        tag: 'coinkorea',
+        limit: 1
+    },
+    (err: any, result: any) => {
+        console.log(err, JSON.stringify(result));
+    });
